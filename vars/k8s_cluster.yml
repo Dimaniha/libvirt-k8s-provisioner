@@ -4,7 +4,7 @@ k8s:
   cluster_os: Ubuntu
   cluster_version: "1.24"
   container_runtime: crio
-  master_schedulable: false
+  master_schedulable: true
 
 # Nodes configuration
 
@@ -16,7 +16,7 @@ k8s:
 
   worker_nodes:
     vcpu: 5
-    mem: 17
+    mem: 19
     vms: 1
     disk: 200
 
