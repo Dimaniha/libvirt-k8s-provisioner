@@ -10,15 +10,15 @@ k8s:
 
   control_plane:
     vcpu: 2
-    mem: 2
-    vms: 1
-    disk: 40
+    mem: 4
+    vms: 3
+    disk: 30
 
   worker_nodes:
-    vcpu: 2
-    mem: 2
+    vcpu: 5
+    mem: 17
     vms: 1
-    disk: 40
+    disk: 200
 
 # Network configuration
 
@@ -42,7 +42,7 @@ rook_ceph:
 
 ingress_controller:
   install_ingress_controller: true
-  type: haproxy
+  type: contour
   node_port:
     http: 31080
     https: 31443
